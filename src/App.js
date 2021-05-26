@@ -2,7 +2,7 @@ import React from "react";
 import styled,{ createGlobalStyle, ThemeProvider } from 'styled-components/macro';
 import normalize from 'styled-normalize';
 import Home from './scenes/Home';
-import About from './scenes/About';
+import Buscador from './scenes/Buscador';
 import Contact from './scenes/Contact';
 
 import {
@@ -26,18 +26,18 @@ function App() {
           <Header.Row>
             <Header.Column>
               <HeaderLink
-               to="/">Home</HeaderLink
-              >
+               to="/">Home
+               </HeaderLink>
             </Header.Column>
             <Header.Column>
               <HeaderLink
-               to="/about">Sobre mí</HeaderLink
-              >
+               to="/buscador">Buscador de personajes Rick & Morty
+               </HeaderLink>
             </Header.Column>
             <Header.Column>
               <HeaderLink
-               to="/contact">Contacto</HeaderLink
-              >
+               to="/contact">Contacto
+               </HeaderLink>
             </Header.Column>
           </Header.Row>
          </Header.Wrapper>
@@ -48,8 +48,8 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/about">
-              <About />
+            <Route path="/buscador">
+              <Buscador />
             </Route>
             <Route path="/contact">
               <Contact />

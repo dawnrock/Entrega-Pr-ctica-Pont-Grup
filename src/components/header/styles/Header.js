@@ -1,18 +1,18 @@
 import styled, { keyframes } from 'styled-components';
-
+import {Link} from 'react-router-dom';
 
 export const Container = styled.div`
   padding: 15vh;
   background: whitesmoke;
-  position: relative;
-  bottom: 100px;
+  /* position: relative; */
+  bottom: 50px;
 `
 
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  max-width: 1000px;
+  /* max-width: 1000px; */
   margin: 0 auto;
 `
 
@@ -62,4 +62,15 @@ export const Logo = styled.img`
   }} */
 }
 `
+export const HeaderLink
+ = styled(Link)`
+  color: black;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
 
+  &:hover {
+    color: yellowgreen;
+    transition: 200ms ease-in;
+  }
+`

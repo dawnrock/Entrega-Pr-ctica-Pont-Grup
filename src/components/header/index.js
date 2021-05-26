@@ -21,3 +21,7 @@ Header.Column = function HeaderColumn({children, ...restProps}) {
 Header.Logo = function HeaderLogo({children, ...restProps}) {
     return <Logo {...restProps}>{children}</Logo>
 }
+
+Header.HeaderLink = function HeaderLink({children, ...restProps}) {
+  return <HeaderLink {...restProps}>{children}</HeaderLink>
+}
