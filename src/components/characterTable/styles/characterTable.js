@@ -26,16 +26,15 @@ export const Row = styled.div`
 
 `
 export const Title = styled.p`
-font-size: 24px;
+font-size: 14px;
 margin-bottom: 1px;
 font-weight: bold;
 `
 export const Logo = styled.img`
 
 border: 1px solid #000;
-background-image: url();
-width: 150px;
-height: 150px;
+width: 250px;
+height: 250px;
 
 `
 
@@ -49,13 +48,13 @@ export const InputDiv = styled.div`
 `
 
 export const InputTitle = styled.p`
-  
+  font-size: 24px;
   margin-left: 40px;
   font-weight: bold;
 `
 
 export const Input = styled.input`
-  font-size: 18px;
+
   padding: 10px;
   margin: 10px;
   background: papayawhip;

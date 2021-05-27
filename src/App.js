@@ -1,9 +1,9 @@
 import React from "react";
-import styled,{ createGlobalStyle, ThemeProvider } from 'styled-components/macro';
+import styled, { createGlobalStyle, ThemeProvider } from 'styled-components/macro';
 import normalize from 'styled-normalize';
 import Home from './scenes/Home';
 import Buscador from './scenes/Buscador';
-import Contact from './scenes/Contact';
+import Contact from './scenes/Galery';
 
 import {
   BrowserRouter as Router,
@@ -13,50 +13,30 @@ import {
 } from "react-router-dom";
 
 import { FooterContainer } from "./containers/footer";
-import Header from './components/header/index';
+import HeaderContainer from '../src/containers/header';
 
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-       <Router>
-        <Header>
-        <Header.Wrapper>
-          <Header.Row>
-            <Header.Column>
-              <HeaderLink
-               to="/">Home
-               </HeaderLink>
-            </Header.Column>
-            <Header.Column>
-              <HeaderLink
-               to="/buscador">Buscador de personajes Rick & Morty
-               </HeaderLink>
-            </Header.Column>
-            <Header.Column>
-              <HeaderLink
-               to="/contact">Contacto
-               </HeaderLink>
-            </Header.Column>
-          </Header.Row>
-         </Header.Wrapper>
-        </Header>
-
-        <BorderRouter />
+      <Router>
+      <HeaderContainer>
+        
+      </HeaderContainer>
         <Switch>
-            <Route exact path="/">
-              <Home />
-            </Route>
-            <Route path="/buscador">
-              <Buscador />
-            </Route>
-            <Route path="/contact">
-              <Contact />
-            </Route>
-          </Switch>
-        </Router>
-        <FooterContainer />
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/buscador">
+            <Buscador />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </Router>
+      <FooterContainer />
     </ThemeProvider>
   );
 }
@@ -83,24 +63,24 @@ code {
     monospace;
 }
 `
-const HeaderLink
- = styled(Link)`
-  color: black;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-decoration: none;
+// const HeaderLink
+//   = styled(Link)`
+//   color: black;
+//   margin-bottom: 20px;
+//   font-size: 24px;
+//   text-decoration: none;
 
-  &:hover {
-    color: yellowgreen;
-    transition: 200ms ease-in;
-  }
-`
+//   &:hover {
+//     color: yellowgreen;
+//     transition: 200ms ease-in;
+//   }
+// `
 
 
-const BorderRouter = styled.hr`
-  border: 2px solid #4cd9f0;
-  padding: 0;
-  margin:0;
-`
+// const BorderRouter = styled.hr`
+//   border: 2px solid #4cd9f0;
+//   padding: 0;
+//   margin:0;
+// `
 
 export default App;

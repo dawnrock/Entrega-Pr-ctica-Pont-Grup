@@ -1,3 +1,3 @@
 export * from './Buscador';
-export * from './Contact';
+export * from './Galery';
 export * from './Home';

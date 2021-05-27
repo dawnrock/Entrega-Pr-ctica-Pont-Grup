@@ -17,25 +17,5 @@ export const CharacterContainer = (props) => {
 
       </CharacterTable>
 
-            /* <CharacterTable.Column>
-              <CharacterTable.Logo src={character.image} style={{ width: "10rem" }}></CharacterTable.Logo>
-            </CharacterTable.Column>
-            <CharacterTable.Column>
-              <CharacterTable.Title {character.name}></CharacterTable.Title>
-            </CharacterTable.Column>
-            <CharacterTable.Column>
-             <CharacterTable.Title {character.status}></CharacterTable.Title>
-            </CharacterTable.Column>
-            <CharacterTable.Column>
-              <CharacterTable.Title {character.species}></CharacterTable.Title>
-            </CharacterTable.Column>
-            <CharacterTable.Column>
-              <CharacterTable.Title {character.type}></CharacterTable.Title>
-            </CharacterTable.Column>
-            <CharacterTable.Column>
-              <CharacterTable.Title {character.gender}></CharacterTable.Title>
-            </CharacterTable.Column> */
-
-
   )
 };

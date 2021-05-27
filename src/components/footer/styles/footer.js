@@ -15,13 +15,6 @@ export const Wrapper = styled.div`
   margin: 0 auto;
 `
 
-export const Column = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 60px;
-`
-
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -32,6 +25,15 @@ export const Row = styled.div`
   }
 
 `
+
+export const Column = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 60px;
+`
+
+
 
 export const Link = styled.a`
   color: black;
@@ -46,6 +48,7 @@ export const Link = styled.a`
 `
 
 export const Title = styled.p`
+
 font-size: 24px;
 margin-bottom: 40px;
 font-weight: bold;
@@ -68,12 +71,12 @@ export const Logo = styled.img`
 @media (prefers-reduced-motion: no-preference) {
   animation: ${spin} infinite 5s linear;
   /* ${(props) => {
-        if (props.fast) {
-            return 'animation-duration: 3s'
-        } else {
-            return 'animation-duration: 15s'
-        }
-    }} */
+    if (props.fast) {
+      return 'animation-duration: 3s'
+    } else {
+      return 'animation-duration: 15s'
+    }
+  }} */
 }
 `
 
