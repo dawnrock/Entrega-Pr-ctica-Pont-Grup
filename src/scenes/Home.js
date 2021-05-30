@@ -1,14 +1,11 @@
 import styled from 'styled-components/macro';
+import Card from '../containers/cards';
 
 
 function Home() {
   return (
     <Container>
-      <div>
-        <p>
-          HOME
-        </p>
-      </div>
+      <Card/>
     </Container>
   );
 }
