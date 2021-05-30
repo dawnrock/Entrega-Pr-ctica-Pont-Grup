@@ -1,29 +1,25 @@
 import React from "react";
-import styled, { createGlobalStyle, ThemeProvider } from 'styled-components/macro';
+import { createGlobalStyle, ThemeProvider } from 'styled-components/macro';
 import normalize from 'styled-normalize';
 import Home from './scenes/Home';
 import Buscador from './scenes/Buscador';
-import Contact from './scenes/Galery';
+import Galery from './scenes/Galery';
 
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 
 import { FooterContainer } from "./containers/footer";
 import HeaderContainer from '../src/containers/header';
-
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Router>
-      <HeaderContainer>
-        
-      </HeaderContainer>
+        <HeaderContainer />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -31,8 +27,8 @@ function App() {
           <Route path="/buscador">
             <Buscador />
           </Route>
-          <Route path="/contact">
-            <Contact />
+          <Route path="/galery">
+            <Galery />
           </Route>
         </Switch>
       </Router>
@@ -54,7 +50,6 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* box-sizing: border-box; */
 
 }
 
@@ -63,24 +58,4 @@ code {
     monospace;
 }
 `
-// const HeaderLink
-//   = styled(Link)`
-//   color: black;
-//   margin-bottom: 20px;
-//   font-size: 24px;
-//   text-decoration: none;
-
-//   &:hover {
-//     color: yellowgreen;
-//     transition: 200ms ease-in;
-//   }
-// `
-
-
-// const BorderRouter = styled.hr`
-//   border: 2px solid #4cd9f0;
-//   padding: 0;
-//   margin:0;
-// `
-
 export default App;

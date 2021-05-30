@@ -1,29 +1,70 @@
-import styled, { css } from 'styled-components';
-import 'pure-react-carousel/dist/react-carousel.es.css';
+import styled, { keyframes, css } from 'styled-components';
 
+const backwardArrowAnimation = keyframes`
+from{
+  left: 50%
+}
+to{
+  left: 10%
+}
+`
 
+const forwardArrowAnimation = keyframes`
+from{
+  left: 50%
+}
+to{
+  left: 90%
+}
+`
 
-export const CarouselContainer = styled.div`
-  width: 100%;
-  height: 100vh;
+export const Container = styled.div`
+  width: 90%;
+  height: 80vh;
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+`
+
+export const ArrowContainer = styled.div`
+  font-size: 50px;
+  width: 50px;
+  height: 50px;
+  background-color: #dee2e6;
   display: flex;
   justify-content: center;
   align-items: center;
-`
-export const SliderWrapper = styled.div`
-  overflow: hidden;
-  position: relative;
-  width: 1000px;
-  height: 500px;
-  background: white;
-  background-color: #ff6f69;
-`
-export const SliderImage = styled.div`
-width: 1000px;
-  height: 500px;
-  background: url(${(p) => p.image});
-  background-position: center;
-  background-size: 100%;
-  background-repeat: no-repeat;
+  border-radius: 50%;
+  cursor: pointer;
+  left: ${props => props.leftPosition};
+  position: absolute;
 
+  ${props => props.arrowDir === 'forward' ?
+    css`
+      animation: ${forwardArrowAnimation} 1s ease;
+    `: css`
+    animation: ${backwardArrowAnimation} 1s ease;
+    `
+  }
+  z-index: 1;
+  :hover {
+    background-color: #adb5bd;
+  }
+`
+
+export const IndicatorIndexContainer = styled.div`
+width: 200px;
+margin: 0 auto;
+display: flex;
+
+`
+export const IndicatorIndex = styled.div`
+width: 30px;
+height: 8px;
+margin: 5px;
+background-color: ${props=> props.bgColor};
+border-radius: 5px ;
 `

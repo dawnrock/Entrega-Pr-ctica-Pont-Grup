@@ -1,11 +1,22 @@
 import React from 'react';
-import { CarouselContainer, SliderWrapper } from './styles/carousel';
+import { Container, ArrowContainer, IndicatorIndexContainer, IndicatorIndex } from './styles/carousel';
+import ImageCarousel  from './styles/image';
 
-
-export default function Carousel({ children, ...restProps }) {
-  return <CarouselContainer{...restProps}>{children}</CarouselContainer>
+export default function CarouselContainer({ children, ...restProps }) {
+  return <Container {...restProps}>{children} </Container>
 }
 
-Carousel.SliderWrapper = function CarouselSliderWrapper({ children, ...restProps }) {
-  return <SliderWrapper {...restProps}>{children}</SliderWrapper>
+CarouselContainer.Arrow = function CarouselArrowContainer({ children, ...restProps }) {
+  return <ArrowContainer {...restProps}>{children}</ArrowContainer>
+}
+
+CarouselContainer.ImageContainer = function CarouselImageContainer({ children, ...restProps }) {
+  return <ImageCarousel {...restProps}>{children} </ImageCarousel>
+}
+
+CarouselContainer.IndicatorContainer = function CarouselIndicatorContainer({ children, ...restProps }) {
+  return <IndicatorIndexContainer {...restProps}>{children} </IndicatorIndexContainer>
+}
+CarouselContainer.Indicator = function CarouselIndicator({ children, ...restProps }) {
+  return <IndicatorIndex {...restProps}>{children} </IndicatorIndex>
 }

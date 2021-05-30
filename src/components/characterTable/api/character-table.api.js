@@ -1,5 +1,5 @@
 import React from "react";
-import { CharacterContainer } from '../../../containers/charactersList';
+import { CharacterContainer } from '../../../containers/characters';
 import { useDebounce } from 'use-debounce';
 import CharacterTable from '../../characterTable/index';
 

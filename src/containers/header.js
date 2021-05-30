@@ -1,30 +1,29 @@
 import Header from '../components/header';
 
- function HeaderContainer() {
-  return(
-    <Header>
-          <Header.Wrapper>
-            <Header.Row>
-              <Header.Column>
-                <Header.HeaderLink
-                  to="/">Home
+function HeaderContainer() {
+  return (
+    <div>
+      <Header>
+        <Header.Wrapper>
+          <Header.Column>
+            <Header.HeaderLink
+              to="/">Home
                </Header.HeaderLink>
-              </Header.Column>
-              <Header.Column>
-                <Header.HeaderLink
-                  to="/buscador">Buscador de personajes Rick & Morty
+          </Header.Column>
+          <Header.Column>
+            <Header.HeaderLink
+              to="/buscador">Buscador de personajes Rick & Morty
                </Header.HeaderLink>
-              </Header.Column>
-              <Header.Column>
-                <Header.HeaderLink
-                  to="/contact">Galery
+          </Header.Column>
+          <Header.Column>
+            <Header.HeaderLink
+              to="/galery">Galery
                </Header.HeaderLink>
-              </Header.Column>
-            </Header.Row>
-            <Header.BorderRouter />
-          </Header.Wrapper>
-        </Header>
-
+          </Header.Column>
+        </Header.Wrapper>
+      </Header>
+      <Header.BorderRouter />
+    </div>
   )
 }
 

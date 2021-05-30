@@ -1,9 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  /* padding: 15vh; */
-  /* background: whitesmoke; */
-  position: relative;
+    position: relative;
 
 `
 
@@ -26,7 +24,7 @@ export const Row = styled.div`
 
 `
 export const Title = styled.p`
-font-size: 14px;
+font-size: 18px;
 margin-bottom: 1px;
 font-weight: bold;
 `

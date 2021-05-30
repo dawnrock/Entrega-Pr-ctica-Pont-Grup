@@ -6,7 +6,6 @@ export const Container = styled.div`
   position: relative;
   top: 400px;
 `
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,7 +13,6 @@ export const Wrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
 `
-
 export const Row = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
@@ -25,16 +23,12 @@ export const Row = styled.div`
   }
 
 `
-
 export const Column = styled.div`
-  display: flex;
+  display: grid;
   flex-direction: column;
   text-align: left;
   margin-left: 60px;
 `
-
-
-
 export const Link = styled.a`
   color: black;
   margin-bottom: 20px;
@@ -46,14 +40,12 @@ export const Link = styled.a`
     transition: 200ms ease-in;
   }
 `
-
 export const Title = styled.p`
 
 font-size: 24px;
 margin-bottom: 40px;
 font-weight: bold;
 `
-
 
 const spin = keyframes`
 
@@ -70,29 +62,6 @@ export const Logo = styled.img`
 
 @media (prefers-reduced-motion: no-preference) {
   animation: ${spin} infinite 5s linear;
-  /* ${(props) => {
-    if (props.fast) {
-      return 'animation-duration: 3s'
-    } else {
-      return 'animation-duration: 15s'
-    }
-  }} */
+
 }
 `
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// export default Footer;
