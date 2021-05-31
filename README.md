@@ -1,4 +1,5 @@
-![Animation](https://user-images.githubusercontent.com/67965208/120203058-9852ac00-c227-11eb-870b-058359cfe645.gif)
+![AnimationProject](https://user-images.githubusercontent.com/67965208/120204752-7528fc00-c229-11eb-9b02-f79947f2db3d.gif)
+
 
 
 # Descarga el directorio completo del repositorio para iniciar la prueba.
