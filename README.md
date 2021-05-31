@@ -14,18 +14,18 @@ Desde el directorio principal, escribir en consola (cmd, powershell, bash) el si
 
 ## Levantar proyecto.
 
-El siguiente paso será escribir de nuevo en la consola el comando para arrancar del proyecto.
+El siguiente paso será escribir de nuevo en la consola el comando necesario para arrancar del proyecto:
 
 ### `npm start`
 
-Si el explorador no se abre automáticamente, escribir en la barra del navegador el siguiente enlace para abrir la página: http://localhost:3000/
+Si el explorador no se abre automáticamente, escribir en la barra del navegador el siguiente enlace para abrir la página manualmente: http://localhost:3000/
 
 ## Layout.
 
 La página consta de tres partes:
 
 - Header.
-  >> Contiene el nombre de las tres escenas. Haciendo click sobre el nombre el router nos llevará a las diferentes escenas.
+  >> Contiene el nombre de las tres escenas. Haciendo click sobre el nombre, el router nos llevará a las diferentes escenas.
 
 - Container principal.
   >> Página principal donde se mostrarán las escenas.
