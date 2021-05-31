@@ -5,7 +5,6 @@ import logo from '../components/footer/images/logo.svg';
 
 export function FooterContainer() {
   return (
-
     <Footer>
       <Footer.Wrapper>
         <Footer.Row>

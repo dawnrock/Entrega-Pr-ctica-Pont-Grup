@@ -6,14 +6,12 @@ export const Container = styled.div`
   background-color: #bbd0ff;
 
 `
-
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin: 0 auto;
 `
-
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
@@ -22,8 +20,6 @@ export const Column = styled.div`
   margin-right: 60px;
   font-size: 36px;
 `
-
-
 export const HeaderLink
   = styled(Link)`
   color: grey;

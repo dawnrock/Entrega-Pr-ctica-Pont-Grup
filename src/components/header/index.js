@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container, Wrapper, Column, HeaderLink, BorderRouter } from './styles/Header';
 
-
 export default function Header({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>
 }
@@ -13,7 +12,6 @@ Header.Wrapper = function HeaderWrapper({ children, ...restProps }) {
 Header.Column = function HeaderColumn({ children, ...restProps }) {
   return <Column {...restProps}>{children}</Column>
 }
-
 
 Header.HeaderLink = function HeaderLinkInner({ children, ...restProps }) {
   return <HeaderLink {...restProps}>{children}</HeaderLink>

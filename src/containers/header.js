@@ -2,7 +2,7 @@ import Header from '../components/header';
 
 function HeaderContainer() {
   return (
-    <div>
+    <>
       <Header>
         <Header.Wrapper>
           <Header.Column>
@@ -23,7 +23,7 @@ function HeaderContainer() {
         </Header.Wrapper>
       </Header>
       <Header.BorderRouter />
-    </div>
+    </>
   )
 }
 

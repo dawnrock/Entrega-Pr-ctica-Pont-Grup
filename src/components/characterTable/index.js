@@ -1,7 +1,6 @@
 import React from 'react';
 import {Container, Wrapper, Row, Title, Logo, Input, InputTitle, InputDiv} from './styles/characterTable';
 
-
 export default function CharacterTable({children, ...restProps}) {
     return <Container{...restProps}>{children}</Container>
 }

@@ -30,10 +30,7 @@ export default function CharacterTableComponent() {
               Escribe para buscar un personaje.
             </CharacterTable.InputTitle>
             <CharacterTable.Input value={filter} onChange={(e) => setFilter(e.target.value)} />
-
           </CharacterTable.InputDiv>
-
-
           <CharacterTable.Row>
 
             {characters.map((character) => (
@@ -41,10 +38,8 @@ export default function CharacterTableComponent() {
             ))}
 
           </CharacterTable.Row>
-
         </CharacterTable.Wrapper>
       </CharacterTable>
-
 
     </>
   );

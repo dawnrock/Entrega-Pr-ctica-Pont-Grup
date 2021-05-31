@@ -4,7 +4,6 @@ import normalize from 'styled-normalize';
 import Home from './scenes/Home';
 import Buscador from './scenes/Buscador';
 import Galery from './scenes/Galery';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -16,7 +15,7 @@ import HeaderContainer from '../src/containers/header';
 
 function App() {
   return (
-      <>
+    <>
       <GlobalStyle />
       <Router>
         <HeaderContainer />
@@ -37,14 +36,13 @@ function App() {
   );
 }
 
-
 const GlobalStyle = createGlobalStyle`
   html, body {
     ${normalize}
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-   
+
 }
 
 code {

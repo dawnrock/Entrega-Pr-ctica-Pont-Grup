@@ -10,6 +10,7 @@ to{
   right: 0%
 }
 `
+
 const backwardImageAnimation = keyframes`
 
 from{
@@ -37,7 +38,6 @@ const ContainerImage = styled.div`
     `
   }
 `
-
 const ImageStyles = styled.img`
   width: 1000px;
   height: 500px;
