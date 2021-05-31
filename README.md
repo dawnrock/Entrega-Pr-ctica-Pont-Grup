@@ -25,7 +25,7 @@ Si el explorador no se abre automáticamente, escribir en la barra del navegador
 La página consta de tres partes:
 
 - Header.
-  >> Contiene el nombre de las tres escenas. Haciendo click sobre el nombre, el router nos llevará a las diferentes escenas.
+  >> Contiene el nombre de las tres escenas. Haciendo click sobre el nombre, el router nos llevará a su correspondiente escena.
 
 - Container principal.
   >> Página principal donde se mostrarán las escenas.
