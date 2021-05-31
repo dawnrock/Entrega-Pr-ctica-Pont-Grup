@@ -1,6 +1,6 @@
 # Descarga el directorio completo del repositorio para iniciar la prueba.
 
-Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app). Es necesario tener instalado nodejs (https://nodejs.org/es/download/).
 
 ## Instalación.
 
@@ -13,6 +13,8 @@ Desde el directorio principal, escribir en consola (cmd, powershell, bash) el si
 El siguiente paso será escribir de nuevo en la consola el comando para arrancar del proyecto.
 
 ### `npm start`
+
+Si el explorador no se abre automáticamente, escribir en la barra del navegador el siguiente enlace para abrir la página: http://localhost:3000/
 
 ## Layout.
 
