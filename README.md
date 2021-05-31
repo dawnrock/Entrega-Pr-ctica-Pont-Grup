@@ -1,3 +1,6 @@
+![Animation](https://user-images.githubusercontent.com/67965208/120203058-9852ac00-c227-11eb-870b-058359cfe645.gif)
+
+
 # Descarga el directorio completo del repositorio para iniciar la prueba.
 
 Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app). Es necesario tener instalado nodejs (https://nodejs.org/es/download/).
@@ -39,12 +42,12 @@ La página consta de tres partes:
 El proyecto está dividido en tres escenas:
 
 - Home.
-  >> Escena dónde cubriremos el caso de los cuadros de texto, para ello usaremos la libreria material-UI para crear los cuadros de texto. (SIN ACABAR)
+  >> Escena dónde cubriremos el caso de los cuadros de texto, para ello usaremos la libreria material-UI (https://material-ui.com/) para crear los cuadros de texto.
   
 - Buscador de personajes de Rick & Morty.
-  >> Ponemos en uso los formularios de contacto usando Fetch para las llamadas a servidor y styled-component para el estilado. En este caso usaremos un cuadro de texto (input)     para filtrar entre todos los personajes de la famosa serie de animación.
+  >> Ponemos en uso los formularios de contacto usando Fetch para las llamadas a servidor y styled-component (https://styled-components.com/) para el estilado. En este caso       usaremos un cuadro de texto (input) para filtrar entre todos los personajes de la famosa serie de animación.
   
 - Galery.
-  >> En esta escena cubrimos el caso de carousel de imágenes y de animaciones usando styled-components. Contiene cursores para desplazar el carousel de imágenes con animación y   cambio de color (:hover). Las imágenes se desplazan con animaciones que imitan el movimento del desplazamiento. Además he añadido un indicador en el pié de imágen para indicar   el punto de avance en la galería.
+  >> En esta escena cubrimos el caso de carousel de imágenes y de animaciones usando styled-components (https://styled-components.com/). Contiene cursores para desplazar el carousel de imágenes con animación y cambio de color (:hover). Las imágenes se desplazan con animaciones que imitan el movimento del desplazamiento. Además he añadido un indicador en el pié de imágen para indicar el punto de avance en la galería.
 
 
