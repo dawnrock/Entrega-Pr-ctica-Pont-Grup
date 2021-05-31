@@ -1,66 +1,48 @@
-# Descarga el directorio para iniciar la prueba.
+# Descarga el directorio completo del repositorio para iniciar la prueba.
 
 Este proyecto ha sido creado con [Create React App](https://github.com/facebook/create-react-app).
 
 ## Instalación.
 
-Ejectua el siguiente comando en la consola para instalar el fichero nodemodules:
+Desde el directorio principal, escribir en consola (cmd, powershell, bash) el siguiente comando para instalar el fichero nodemodules:
+
+### `npm install`
+
+## Levantar proyecto.
+
+El siguiente paso será escribir de nuevo en la consola el comando para arrancar del proyecto.
 
 ### `npm start`
 
+## Layout.
+
+La página consta de tres partes:
+
+- Header.
+  >> Contiene el nombre de las tres escenas. Haciendo click sobre el nombre el router nos llevará a las diferentes escenas.
+
+- Container principal.
+  >> Página principal donde se mostrarán las escenas.
+  
+- Footer.
+  Muestra los siguientes enlaces directos:
+  >> Repositorio de prácticas en gitHub.
+  >> Página oficial del framework usado para el proyecto (React).
+  >> Página de Twitter personal.
+  >> Contactar por correo electrónico. 
+  
+
+## Paginación.
+
+El proyecto está dividido en tres escenas:
+
+- Home.
+  >> Escena dónde cubriremos el caso de los cuadros de texto, para ello usaremos la libreria material-UI para crear los cuadros de texto. (SIN ACABAR)
+  
+- Buscador de personajes de Rick & Morty.
+  >> Ponemos en uso los formularios de contacto usando Fetch para las llamadas a servidor y styled-component para el estilado. En este caso usaremos un cuadro de texto (input)     para filtrar entre todos los personajes de la famosa serie de animación.
+  
+- Galery.
+  >> En esta escena cubrimos el caso de carousel de imágenes y de animaciones usando styled-components. Contiene cursores para desplazar el carousel de imágenes con animación y   cambio de color (:hover). Las imágenes se desplazan con animaciones que imitan el movimento del desplazamiento. Además he añadido un indicador en el pié de imágen para indicar   el punto de avance en la galería.
 
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
