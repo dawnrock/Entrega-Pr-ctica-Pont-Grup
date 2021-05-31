@@ -1,10 +1,9 @@
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
   padding: 2vh;
-  background: whitesmoke;
-  /* position: relative; */
+  background-color: #bbd0ff;
 
 `
 
@@ -12,7 +11,6 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* max-width: 1000px; */
   margin: 0 auto;
 `
 
@@ -28,21 +26,22 @@ export const Column = styled.div`
 
 export const HeaderLink
   = styled(Link)`
-  color: black;
+  color: grey;
   margin-bottom: 20px;
   font-size: 24px;
   text-decoration: none;
 
   &:hover {
-    color: yellowgreen;
+    color: #585481;
     transition: 200ms ease-in;
   }
 `
 export const BorderRouter = styled.hr`
-  border: 2px solid #4cd9f0;
+  border: 2px solid #585481;
   padding: 0;
   margin:0;
 `
+
 
 
 

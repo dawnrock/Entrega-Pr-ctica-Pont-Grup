@@ -2,7 +2,7 @@ import styled, { keyframes } from 'styled-components';
 
 export const Container = styled.div`
   padding: 15vh;
-  background: whitesmoke;
+  background-color: #585481;
   position: relative;
   top: 400px;
 `
@@ -30,18 +30,18 @@ export const Column = styled.div`
   margin-left: 60px;
 `
 export const Link = styled.a`
-  color: black;
+  color: grey;
   margin-bottom: 20px;
   font-size: 18px;
   text-decoration: none;
 
   &:hover {
-    color: yellowgreen;
+    color: #bbd0ff;
     transition: 200ms ease-in;
   }
 `
 export const Title = styled.p`
-
+color: white;
 font-size: 24px;
 margin-bottom: 40px;
 font-weight: bold;

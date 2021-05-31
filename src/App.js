@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle, ThemeProvider } from 'styled-components/macro';
+import { createGlobalStyle } from 'styled-components/macro';
 import normalize from 'styled-normalize';
 import Home from './scenes/Home';
 import Buscador from './scenes/Buscador';
@@ -16,7 +16,7 @@ import HeaderContainer from '../src/containers/header';
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
+      <>
       <GlobalStyle />
       <Router>
         <HeaderContainer />
@@ -33,16 +33,10 @@ function App() {
         </Switch>
       </Router>
       <FooterContainer />
-    </ThemeProvider>
+    </>
   );
 }
 
-const theme = {
-  colors: {
-    primary: 'red',
-    secondary: 'yellowgreen'
-  }
-}
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -50,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
   font-family: 'Nunito Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+   
 }
 
 code {
